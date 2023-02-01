@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
                                     //Checks null condition for name
                                     String name = listItemAsObject.optString("name", null);
-                                    
 
                                     // checks for blank names
                                     if (name != "null" && !name.equals("")) {

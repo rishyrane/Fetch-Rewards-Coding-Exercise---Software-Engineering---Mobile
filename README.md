@@ -11,4 +11,4 @@ or
 you can find the release apk of this app 
 in the releases section of this repository
 
-[screenshot.png](ic_refresh.xml)
+![screenshot.png](screenshot.png)

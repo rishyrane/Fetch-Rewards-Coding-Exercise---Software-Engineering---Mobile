@@ -9,6 +9,6 @@ run the app through android studio
 or 
 
 you can find the release apk of this app 
-in the releases section of this repository
+in app/release/app-release.apk and then install it on any android device
 
-[screenshot.png](ic_refresh.xml)
+![screenshot.png](screenshot.png)

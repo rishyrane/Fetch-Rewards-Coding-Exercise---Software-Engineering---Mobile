@@ -78,12 +78,12 @@ public class MainActivity extends AppCompatActivity {
 
                                     //Checks null condition for name
                                     String name = listItemAsObject.optString("name", null);
+                                    
 
                                     // checks for blank names
                                     if (name != "null" && !name.equals("")) {
                                         listOfItems.add(new ListItem(id, listId, name));
                                     }
-
                                 }
 
                                 // List is first sorted by list id

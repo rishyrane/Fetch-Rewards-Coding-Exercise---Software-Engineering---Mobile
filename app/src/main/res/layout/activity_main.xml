@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                >
+            </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/noItemsInList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="invisible">
+
+
+            <TextView
+                android:id="@+id/noItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_items"
+                android:textSize="34sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.5dp"
+                android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:textColor="?android:textColorPrimary" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

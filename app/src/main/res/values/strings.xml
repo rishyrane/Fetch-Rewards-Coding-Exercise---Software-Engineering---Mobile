@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fetch Rewards Coding Exercise</string>
+    <string name="no_items">No Items in List</string>
+    <string name="refresh">Refresh</string>
+</resources>
